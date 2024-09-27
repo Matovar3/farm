@@ -205,9 +205,9 @@ footer {
 	line-height: 1.5;
 }
 
-footer h3 {
+footer h2 {
 	font-family: var(--header-font);
-	font-size: var(--h3-size);
+	font-size: var(--h2-size);
 	line-height: 2;
 }
 
