@@ -250,7 +250,8 @@ footer a {
    
     footer { 
         display: flex;
-        justify-content: space-evenly;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
        }
    
     .hours { 
@@ -297,7 +298,6 @@ footer a {
 	footer {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-evenly;
  }
 
 	.contact, .hours {
