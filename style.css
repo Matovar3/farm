@@ -68,7 +68,7 @@ table {
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 
 header {
-	background-color: var(--green-color);
+	background-color: var(--green);
 	text-align: center;
 	padding: 20px;
 }
@@ -103,7 +103,7 @@ nav ul {
 }
 nav a {
 	color: var(--white);
-	background-color: var(--orange-);
+	background-color: var(--orange);
 	padding: 10px;
 	text-decoration: none;
 	text-align: center;
@@ -230,5 +230,95 @@ footer a {
 }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media (min-width: 834px) {
+
+    header {
+        display: flex;
+        flex: space-between;
+        align-items: center;
+    }
+   
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+   
+    main ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+   
+    footer { 
+        display: flex;
+        justify-content: space-evenly;
+       }
+   
+    .hours { 
+           margin: 0;
+    }
+} 
+
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media (min-width: 1280px) {
+
+    .container {
+		display: flex;
+        flex-wrap: nowrap;
+		background-color: var(--green);
+    }
+
+	header {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	nav {
+			flex: 1;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+	}
+
+	nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+	}
+
+	main ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr); 
+	}
+
+	footer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+ }
+
+	.contact, .hours {
+		display: flex;
+		flex-wrap: wrap;
+		width: 50%; 
+		}
+
+	.footer-column {
+			width: 50%;
+	}
+}
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media (min-width: 1440px) {
+
+	nav { 
+	    justify-content: flex-end;
+	}
+
+	main ul {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr); 
+	}
+}
